@@ -1,16 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-RU-Compatible" content="ie=edge">
     <title>$Title$</title>
     <title>Заголовок страницы</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"
-           type="text/css">
+    <link href="{% static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet"></link>
 </head>
-<body style="background: seagreen">
-    {% block content %}
+<body>
 
-    {% endblock %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>{% include "mainApp/includes/some_html.html"%}</h1>
+            {% include "mainApp/includes/some_html.html"%}
+            {% block content %}
+
+            {% endblock %}
+            <p>
+                <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+                <a href="/news" class="btn btn-primary btn-lg">Новости &raquo;</a>
+                <a href="/contact " class="btn btn-primary btn-lg">Контакты &raquo;</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="{% static 'mainApp/image/DOHnnh2XUAAyW2m.jpg' %}">
+        <hr>
+        &copy; Все права защищены 2021
+    </div>
 </body>
 </html>
