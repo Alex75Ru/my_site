@@ -3,6 +3,18 @@
 {% block title %}<h1>Главная страница</h1>{% endblock %}
 
 {% block content %}
-    <h1>Главная страница</h1>
-    <p>Главная страница</p>
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis cum cumque dolore explicabo ipsum magnam rem sapiente suscipit tempore!</p>
+        <button class="btn btn-warning">На страницу про нас</button>
+
+    {% for el in values %}
+        <p>{{ el }}</p>
+    {% endfor %}
+    {{ obj }}
+    {{ obj.age }}
+    {% for el in obj %}
+        <p>{{ el }}</p>
+    {% endfor %}
+    </div>
 {% endblock %}
