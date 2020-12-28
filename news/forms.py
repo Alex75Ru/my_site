@@ -1,10 +1,10 @@
-from .models import Artiles
+from .models import Articles
 from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
 
 
-class ArtilesForm(ModelForm):
+class ArticlesForm(ModelForm):
     class Meta:
-        model = Artiles
+        model = Articles
         fields = ['title', 'anons', 'full_text', 'date']
 
         widgets = {
