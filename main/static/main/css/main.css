@@ -7,9 +7,10 @@ aside {
     background: #181818;
     width: 210px;
     padding: 0.5%;
-    height: 100vh;
+    height: 1000px;
     color: #fff;
-    border-right: 5px solid #4d4d4d;
+    border-right: 7px solid #4d4d4d;
+
 }
 
 aside img {
@@ -40,7 +41,7 @@ aside ul li {
 
 aside ul li:hover, aside ul a:hover {
     color: #eb5959;
-    text-decoration: none;
+    text-decoration: #212529;
     transform: scale(1.08);
 }
 
